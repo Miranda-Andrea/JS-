@@ -181,4 +181,45 @@ function calcularVolumenEsfera(radio) {
 }
 
 
+// EJERCICIO 1
+
+function verificarEdadParaVotar(edad) {
+    if (edad >= 18) {
+        console.log("¡Puedes votar! 🗳️");
+    } else {
+        console.log("Lo siento, no tienes la edad suficiente para votar. 🚫");
+    }
+
+// EJERCICIO 2
+
+function calcularPromedioYEvaluar(calificacion1, calificacion2, calificacion3, calificacion4) {
+    // Calcular el promedio
+    var promedio = (calificacion1 + calificacion2 + calificacion3 + calificacion4) / 4;
+
+    // Evaluar si el promedio es aprobatorio
+    if (promedio >= 7) {
+        console.log("¡Aprobado! Promedio: " + promedio);
+    } else {
+        console.log("Reprobado. Promedio: " + promedio);
+    }
+}
+
+// EJERCICIO 4
+
+function esDivisibleEntre7y8(numero) {
+    if (numero % 7 === 0 && numero % 8 === 0) {
+        console.log("Verdadero");
+    } else {
+        console.log("Falso");
+    }
+}
+
+// Casos de prueba
+esDivisibleEntre7y8(56);  // Verdadero
+esDivisibleEntre7y8(7);   // Falso
+esDivisibleEntre7y8(8);   // Falso
+esDivisibleEntre7y8(0);   // Verdadero
+esDivisibleEntre7y8(224); // Verdadero
+esDivisibleEntre7y8(73);  // Falso
+
 
